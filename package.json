@@ -1,0 +1,21 @@
+{
+  "name": "wavespeed-claude-video",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Clone any winning ad for your product. Claude Code skills for Wavespeed + Seedance 2.0 + Nano Banana 2 + Gemini video understanding.",
+  "type": "module",
+  "scripts": {
+    "setup": "bun setup.ts",
+    "fetch-media": "bun scripts/fetch-media.ts",
+    "analyze": "bun scripts/gemini-analyze.ts",
+    "image": "bun scripts/nano-banana.ts",
+    "video": "bun scripts/seedance.ts",
+    "concat": "bun scripts/ffmpeg-concat.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

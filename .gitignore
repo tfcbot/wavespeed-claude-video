@@ -1,0 +1,32 @@
+.env
+.env.local
+.env.*.local
+node_modules/
+bun.lock
+package-lock.json
+yarn.lock
+
+# Generated outputs — keep local, don't commit
+references/outputs/*
+!references/outputs/.gitkeep
+
+# Downloaded references — user-specific
+references/ads/*.mp4
+references/ads/*.mov
+references/products/*.jpg
+references/products/*.jpeg
+references/products/*.png
+!references/products/.gitkeep
+!references/ads/.gitkeep
+
+# macOS / editor debris
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temp / scratch
+/tmp/
+/renders/
+*.log
